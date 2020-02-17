@@ -15,7 +15,13 @@ export default function JobList() {
         location={"Brisbane-Woolloongabba"}
         industryType={"Small Animal"}
         pay={"$70-80k"}
-        perks={["accomodation", "car", "flight", "newgrad", "overseas"]}
+        badgeCodeArray={[
+          "provideAccomodation",
+          "provideVehicle",
+          "provideFlight",
+          "acceptNewGraduate",
+          "acceptOverseas"
+        ]}
         shortDescription={
           "seeking locum for christmas rush period, need responses soon, good $$$, accomodation and car provided, ideal candidate, blah blah blah blah blah blah blah  and something about stuff and more stuff about stuff etc."
         }
