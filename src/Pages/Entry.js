@@ -9,7 +9,7 @@ import JobList from "./JobList";
 export default function Entry() {
   return (
     <div>
-      <Container fluid>
+      <Container>
         <Row>
           <Col>
             <MenuBar />
@@ -17,10 +17,10 @@ export default function Entry() {
         </Row>
         <Row>
           <Col>
-            <NavLink to="/jobs">Jobs</NavLink>
+            <NavLink to="/jobs">Job Search</NavLink>
           </Col>
           <Col>
-            <NavLink to="/staff">Staff</NavLink>
+            <NavLink to="/staff">Staff Search</NavLink>
           </Col>
         </Row>
         <Row>
