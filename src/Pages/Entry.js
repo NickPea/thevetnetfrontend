@@ -7,6 +7,8 @@ import StaffList from "./StaffList";
 import JobList from "./JobList";
 import ProviderProfile from "./ProviderProfile";
 import StaffProfile from "./StaffProfile";
+import SignInForm from "../PageComponents/SignInForm";
+import SignUpForm from "../PageComponents/SignUpForm";
 
 export default function Entry() {
   return (
@@ -22,17 +24,24 @@ export default function Entry() {
             <NavLink to="/jobs">Job Listings</NavLink>
           </Col>
           <Col>
-            <NavLink to="/staff">Staff Listings</NavLink>
+            <NavLink to="/providerprofile">Provider Profile</NavLink>
           </Col>
           <Col>
-            <NavLink to="/providerprofile">Provider Profile</NavLink>
+            <NavLink to="/staff">Staff Listings</NavLink>
           </Col>
           <Col>
             <NavLink to="/staffprofile">Staff Profile</NavLink>
           </Col>
+          <Col>
+            <NavLink to="/signin">Sign In</NavLink>
+          </Col>
+          <Col>
+            <NavLink to="/signup">Sign Up</NavLink>
+          </Col>
         </Row>
         <Row>
           <Col>
+            <br />
             <Switch>
               <Route path="/jobs">
                 <JobList />
@@ -45,6 +54,12 @@ export default function Entry() {
               </Route>
               <Route path="/staffprofile">
                 <StaffProfile />
+              </Route>
+              <Route path="/signin">
+                <SignInForm />
+              </Route>
+              <Route path="/signup">
+                <SignUpForm />
               </Route>
             </Switch>
           </Col>
