@@ -5,6 +5,8 @@ import { Switch, Route, NavLink } from "react-router-dom";
 //components
 import StaffList from "./StaffList";
 import JobList from "./JobList";
+import ProviderProfile from "./ProviderProfile";
+import StaffProfile from "./StaffProfile";
 
 export default function Entry() {
   return (
@@ -17,10 +19,16 @@ export default function Entry() {
         </Row>
         <Row>
           <Col>
-            <NavLink to="/jobs">Job Search</NavLink>
+            <NavLink to="/jobs">Job Listings</NavLink>
           </Col>
           <Col>
-            <NavLink to="/staff">Staff Search</NavLink>
+            <NavLink to="/staff">Staff Listings</NavLink>
+          </Col>
+          <Col>
+            <NavLink to="/providerprofile">Provider Profile</NavLink>
+          </Col>
+          <Col>
+            <NavLink to="/staffprofile">Staff Profile</NavLink>
           </Col>
         </Row>
         <Row>
@@ -31,6 +39,12 @@ export default function Entry() {
               </Route>
               <Route path="/staff">
                 <StaffList />
+              </Route>
+              <Route path="/providerprofile">
+                <ProviderProfile />
+              </Route>
+              <Route path="/staffprofile">
+                <StaffProfile />
               </Route>
             </Switch>
           </Col>
