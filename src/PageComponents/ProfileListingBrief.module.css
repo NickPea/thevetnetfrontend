@@ -1,0 +1,22 @@
+.jobListingBrief {
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+  /* transitions */
+  transition: 2s ease-out;
+}
+.jobListingBrief:hover {
+  transform: translate(0px, -3px) scale(1.005);
+  cursor: pointer;
+}
+.jobListingBrief:active {
+  transform: translate(0px, 0px) scale(1);
+  cursor: pointer;
+}
+.jobListingBrief img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border: 3px solid white;
+}

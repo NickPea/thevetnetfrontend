@@ -13,14 +13,11 @@ export default function SignInForm() {
               <Form>
                 <Form.Group controlId="formBasicEmail">
                   <Form.Label>Username</Form.Label>
-                  <Form.Control placeholder="enter your username" />
+                  <Form.Control />
                 </Form.Group>
                 <Form.Group controlId="formBasicPassword">
                   <Form.Label>Password</Form.Label>
-                  <Form.Control
-                    type="password"
-                    placeholder="enter your password"
-                  />
+                  <Form.Control type="password" />
                 </Form.Group>
 
                 <Row>

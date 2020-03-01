@@ -1,0 +1,28 @@
+.userPanel {
+  height: 250px;
+  background-color: rgba(0, 89, 255, 0.5);
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.applicationPanel {
+  height: 400px;
+  background-color: rgba(9, 131, 9, 0.5);
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.workerPanel {
+  height: 400px;
+  background-color: rgba(255, 166, 0, 0.5);
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.staffPanel {
+  height: 400px;
+  background-color: rgba(255, 166, 0, 0.5);
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 5px;
+}

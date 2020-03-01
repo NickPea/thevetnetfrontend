@@ -9,6 +9,7 @@ import ProviderProfile from "./ProviderProfile";
 import StaffProfile from "./StaffProfile";
 import SignInForm from "../PageComponents/SignInForm";
 import SignUpForm from "../PageComponents/SignUpForm";
+import Dashboard from "./Dashboard";
 
 export default function Entry() {
   return (
@@ -38,6 +39,9 @@ export default function Entry() {
           <Col>
             <NavLink to="/signup">Sign Up</NavLink>
           </Col>
+          <Col>
+            <NavLink to="/dashboard">Dashboard</NavLink>
+          </Col>
         </Row>
         <Row>
           <Col>
@@ -60,6 +64,9 @@ export default function Entry() {
               </Route>
               <Route path="/signup">
                 <SignUpForm />
+              </Route>
+              <Route path="/dashboard">
+                <Dashboard />
               </Route>
             </Switch>
           </Col>
