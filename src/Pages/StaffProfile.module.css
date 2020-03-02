@@ -1,0 +1,20 @@
+.spHeader {
+  position: relative;
+  background-color: rgba(98, 168, 168, 0.5);
+  border-radius: 15px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.spHeaderImage {
+  border: 3px solid grey;
+}
+
+.spIntro {
+  position: relative;
+  background-color: rgba(98, 168, 168, 0.5);
+  border-radius: 15px;
+  height: 300px;
+  margin: 15px;
+  padding: 15px;
+}
