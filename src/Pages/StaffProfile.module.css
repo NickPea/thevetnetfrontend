@@ -1,3 +1,7 @@
+.spWrapper {
+  padding: 15px;
+}
+
 .spHeader {
   position: relative;
   background-color: rgba(98, 168, 168, 0.5);
@@ -10,11 +14,33 @@
   border: 3px solid grey;
 }
 
-.spIntro {
+.spSummary {
   position: relative;
-  background-color: rgba(98, 168, 168, 0.5);
+  border: 1px solid black;
   border-radius: 15px;
   height: 300px;
   margin: 15px;
   padding: 15px;
+}
+.spCredentials {
+  position: relative;
+  background-color: rgba(97, 161, 88, 0.5);
+  border-radius: 15px;
+  height: 300px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.spExperience {
+  position: relative;
+  background-color: rgba(168, 114, 98, 0.5);
+  border-radius: 15px;
+  height: 300px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.spTitle {
+  font-weight: bold;
+  font-style: italic;
 }

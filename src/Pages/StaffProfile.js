@@ -6,11 +6,11 @@ import css from "./StaffProfile.module.css";
 
 export default function StaffProfile() {
   return (
-    <div>
-      <Paper>
+    <>
+      <Paper className={css.spWrapper}>
         <div className={css.spHeader}>
           <Row>
-            <Col>
+            <Col className="d-flex justify-content-center">
               <Avatar
                 alt="staff profile image"
                 src={VetImage}
@@ -18,16 +18,44 @@ export default function StaffProfile() {
                 style={{ width: "300px", height: "300px" }}
               />
             </Col>
-            <Col>hello</Col>
+            <Col md={7} style={{ margin: "20px" }}>
+              <h1
+                style={{
+                  color: "white",
+                  fontWeight: "bold",
+                  display: "inline-block"
+                }}>
+                <u>Cindy Ranger</u>
+              </h1>
+              <h3>Veterinarian</h3>
+            </Col>
           </Row>
         </div>
 
-        <div className={css.spIntro}>
+        <Row>
+          <Col>
+            <div className={css.spSummary}>
+              <h6 className={css.spTitle}>Profressional Summary</h6>
+              <hr />
+              <p>looking for prac work, please consider me</p>
+            </div>
+          </Col>
+          <Col md={4}>
+            <div className={css.spCredentials}>
+              <h6 className={css.spTitle}>Credentials</h6>
+              <hr />
+            </div>
+          </Col>
+        </Row>
+        <div className={css.spExperience}>
           <Row>
-            <Col></Col>
+            <Col>
+              <h6 className={css.spTitle}>Experience</h6>
+              <hr />
+            </Col>
           </Row>
         </div>
       </Paper>
-    </div>
+    </>
   );
 }
